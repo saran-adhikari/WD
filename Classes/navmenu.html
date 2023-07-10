@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navmenu</title>
+</head>
+<body>
+    <style>
+        .navbar{
+            display: flex;
+            margin: 2px;
+            padding: 2px;
+        }
+        .navbar ul{
+            display: flex;
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+        }
+        .navbar ul li{
+            display: flex;
+            color: red;
+            margin: 10px;
+            padding: 10px;
+            position: relative;
+            
+        }
+        .navbar ul li:hover{
+            color: white;
+            background-color: skyblue;
+
+        }
+        .navbar ul li ul li{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            padding: 10px;
+            border-bottom: 1px solid white;
+            background-color: black;
+            color: white;
+            /* position: absolute;
+            top: 0;
+            left: 0; */
+            /* display: none; */
+            
+
+        }
+    </style>
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>Languages
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>ReactJS</li>
+                </ul>
+            </li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    border-radius: 50px;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 5%;
+    
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 100px 100px 100px 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    grid-template-areas: ". . . number"
+        "ac fraction percentage division"
+        "seven eight nine cross"
+        "four five six minus"
+        "one two three plus"
+        "null null dots eq"
+        ;
+}
+
+.number {
+    font-size:100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-area: number;
+    color: white;
+    font-weight: bolder;
+    text-align: left;
+    
+}
+
+.ac {
+    padding: 20px;
+    grid-area: ac;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    background-color: #A0A0A0;
+
+    color: black;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.fraction {
+    grid-area: fraction;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    background-color: #A0A0A0;
+
+    color: black;
+    font-weight: bolder;
+    padding: 20px;
+    font-size: x-large;
+}
+
+.percentage {
+    grid-area: percentage;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    background-color: #A0A0A0;
+
+    color: black;
+    font-weight: bolder;
+    padding: 20px;
+    font-size: x-large;
+}
+
+.division {
+    grid-area: division;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    background-color: #F69906;
+
+    font-weight: bolder;
+    padding: 20px;
+    font-size: x-large;
+}
+
+.seven {
+    grid-area: seven;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    background-color: #313131;
+
+    padding: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.eight {
+    grid-area: eight;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    background-color: #313131;
+
+    padding: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.nine {
+    grid-area: nine;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    background-color: #313131;
+
+    padding: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.multiply {
+    grid-area: cross;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    background-color: #F69906;
+
+    padding: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.four {
+    grid-area: four;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    background-color: #313131;
+
+    padding: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.five {
+    grid-area: five;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    
+    background-color: #313131;
+
+    padding: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.six {
+    grid-area: six;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    background-color: #313131;
+
+    padding: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.minus {
+    grid-area: minus;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    background-color: #F69906;
+
+    padding: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.one {
+    grid-area: one;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    background-color: #313131;
+
+    padding: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.two {
+    grid-area: two;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    background-color: #313131;
+
+    padding: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.three {
+    grid-area: three;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    background-color: #313131;
+
+    padding: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.plus {
+    grid-area: plus;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    background-color: #F69906;
+
+    padding: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.zero {
+    grid-area: null;
+    height: 70px;
+    width: 180px;
+    border-radius:500px;
+    background-color: #313131;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: left;
+}
+
+.dot {
+    grid-area: dots;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    background-color: #313131;
+
+    padding: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.equals {
+    grid-area: eq;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    background-color: #F69906;
+    font-weight: bolder;
+    padding: 20px;
+    font-size: x-large;
+}
