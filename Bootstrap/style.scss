@@ -14,11 +14,18 @@ html {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+}
 
 .navbar-brand {
     margin-left: 20%;
     font-size: 30px;
     color: $primary;
+    font-weight: bold;
 
     &:hover {
         color: $primary;
@@ -37,7 +44,8 @@ html {
 .navbar-expand-lg .navbar-nav {
     margin-left: 35%;
     padding: 5px;
-    font-size: 20px;
+    font-size: 15px;
+    color: $secondary;
 
 
 }
@@ -45,20 +53,16 @@ html {
 .navbar-expand-lg .navbar-nav .nav-link {
     margin: 10px;
     padding: 5px;
-    color: $text;
+    
 
     &:hover {
         background-color: $primary;
         color: white;
         border-radius: 10px;
     }
+    
 }
 
-.container-fluid{
-    position: sticky;
-    top: 0;
-    bottom: 10px;
-}
 .carousel-caption .d-none .d-md-block{
     h5 {
         border: 1px solid $primary;
@@ -97,14 +101,14 @@ html {
         margin-left: 250px;
         color:#333333;
         font-weight: 500;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     button {
         font-family:Arial, Helvetica, sans-serif ;
         border: 1px solid $primary;
-        margin-right: 600px;
-        padding: 10px;
+        margin-right: 400px;
+        padding: 5px;
         border-radius: 5px;
         font-size: 14px;
         font-weight: 200 bold;
@@ -122,6 +126,12 @@ html {
 .about{
     background-color: $secondary;
     color: white;
+    padding: 15px;
+    .col{
+        padding: 25px;
+        margin: 10px;
+        text-align: left;
+    }
     h3{
         font-family:Arial, Helvetica, sans-serif ;
         text-align: center;
@@ -136,19 +146,268 @@ html {
         font-weight: 400;
         color: $text;
     }
-}
-.box{
-    display: grid;
-    
-    
+    h4{
+        margin-left: 15px;
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    p{
+        color: $text;
+        text-align: left;
+    }
     i{
         color: $primary;
-        font-size: 24px;
+        font-size: larger;
+    }
+}
+.services{
+    h3{
+        font-family:Arial, Helvetica, sans-serif ;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 10px;
+        font-size: 30px;
+        font-weight: 500;
+        color: $primary;
+    }
+    pre{
+        text-align: center;
+        font-size: 17px;
+        font-weight: 400;
+        color: $text;
+    }
+    h4{
+        font-weight: 500;
+        color: #333333;
+        margin: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .row .row-cols-3{
+        padding: 15px;
+    }
+    .col{
+        padding: 30px;
+    }
+    i{
+        font-size:xx-large;
+        color: white;
+        background-color: $primary;
+        margin: 5px;
+        padding: 15px;
+        border-radius: 100px;
+
+    }
+}
+
+.portfolio{
+    background-color: $secondary;
+    padding: 15px;
+    h3{
+        font-family:Arial, Helvetica, sans-serif ;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 10px;
+        font-size: 30px;
+        font-weight: 500;
+        color: $primary;
+    }
+    pre{
+        text-align: center;
+        font-size: 17px;
+        font-weight: 400;
+        color: $text;
+    }
+    .nav{
+        justify-content: center;
+        ul{
+            display: flex;
+            align-content: center;
+            text-align: center;
+            list-style: none;
+            li{
+                font-weight: 400;
+                font-size: 14px;
+                text-align: center;
+                margin: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border: 2px solid $primary;
+                color: $primary;
+                cursor: pointer;
+                &:hover{
+                    background-color: $primary;
+                    color: white;
+                }
+            }
+        }
+    }
+    img{
+        margin: 15px;
+        cursor: pointer;
+    }  
+}
+
+.team{
+    h3{
+        font-family:Arial, Helvetica, sans-serif ;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 10px;
+        font-size: 30px;
+        font-weight: 500;
+        color: $primary;
+    }
+    pre{
+        text-align: center;
+        font-size: 17px;
+        font-weight: 400;
+        color: $text;
+    }
+    img{
+        height: 200px;
+        width: 200px;
+        border: 2px solid $primary;
+        border-radius: 100px;
+    }
+    h4{
+        color: $text;
+        margin: 10px;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
     }
     h6{
-        display: inline;
-        font-weight: 500;
-        font-size: 24px;
-        margin: 10px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #333333;
     }
+    i{
+        border: 1px solid $text;
+        border-radius: 5px;
+        padding: 8px;
+        font-size: larger;
+        color: $primary;
+        margin: 5px;
+        cursor: pointer;
+    }
+}
+.contact{
+    padding: 100px;
+    h3{
+        font-family:Arial, Helvetica, sans-serif ;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 10px;
+        font-size: 30px;
+        font-weight: 500;
+        color: $primary;
+    }
+    pre{
+        text-align: center;
+        font-size: 17px;
+        font-weight: 400;
+        color: $text;
+        padding: 10px;
+    }
+    .col{
+        margin: 10px;
+        padding: 10px;
+    }
+    h6{
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        font-style: normal;
+        color: #333333;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+    }
+    form{
+        label{
+            display: block;
+            padding-top: 10px ;
+            padding-bottom: 10px;
+            font-weight: 700;
+            size: 14px;
+            color: #333333;
+        }
+        input{
+            padding: 5px;
+            display: block; 
+            border: 1px solid $text;
+            border-radius: 5px;  
+        }
+        label{
+            display: block;
+            padding-top: 10px ;
+            font-weight: 700;
+            size: 14px;
+            color: #333333;
+        }
+        
+    }
+    button{
+        font-size: 18px;
+        font-weight: 200;
+        color: white;
+        background-color: $primary;
+        padding: 10px;
+        border: 1px solid $primary;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+}
+.others{
+    background-color:$secondary;
+    padding: 10px;
+    color: $text;
+    .col{
+        padding: 20px;
+
+    }
+    h6{
+        color: $primary;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        font-style: normal;
+    }
+    p{
+        color: $text;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    span{
+        color: $primary;
+        cursor: pointer;
+    }
+    i{
+        font-size: x-small;
+        color: black;
+        background-color: $primary;
+        padding: 5px;
+        font-weight: bold;
+        margin: 3px;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    
+}
+footer{
+    color: $text;
+    display: flex;
+    background-color:#131313 ;
+    padding: 10px;
+    justify-content: space-around;
+    color: $text;
+    a{
+        color: $primary;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
 }

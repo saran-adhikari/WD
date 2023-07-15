@@ -10,10 +10,17 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .navbar-brand {
   margin-left: 20%;
   font-size: 30px;
   color: #80B422;
+  font-weight: bold;
 }
 .navbar-brand:hover {
   color: #80B422;
@@ -28,24 +35,18 @@ html {
 .navbar-expand-lg .navbar-nav {
   margin-left: 35%;
   padding: 5px;
-  font-size: 20px;
+  font-size: 15px;
+  color: #2C2C2C;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
   margin: 10px;
   padding: 5px;
-  color: #BEBEC4;
 }
 .navbar-expand-lg .navbar-nav .nav-link:hover {
   background-color: #80B422;
   color: white;
   border-radius: 10px;
-}
-
-.container-fluid {
-  position: sticky;
-  top: 0;
-  bottom: 10px;
 }
 
 .carousel-caption .d-none .d-md-block h5 {
@@ -80,13 +81,13 @@ html {
   margin-left: 250px;
   color: #333333;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
 }
 .start button {
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid #80B422;
-  margin-right: 600px;
-  padding: 10px;
+  margin-right: 400px;
+  padding: 5px;
   border-radius: 5px;
   font-size: 14px;
   font-weight: 200 bold;
@@ -100,6 +101,12 @@ html {
 .about {
   background-color: #2C2C2C;
   color: white;
+  padding: 15px;
+}
+.about .col {
+  padding: 25px;
+  margin: 10px;
+  text-align: left;
 }
 .about h3 {
   font-family: Arial, Helvetica, sans-serif;
@@ -115,17 +122,260 @@ html {
   font-weight: 400;
   color: #BEBEC4;
 }
-
-.box {
-  display: grid;
+.about h4 {
+  margin-left: 15px;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.box i {
+.about p {
+  color: #BEBEC4;
+  text-align: left;
+}
+.about i {
   color: #80B422;
-  font-size: 24px;
+  font-size: larger;
 }
-.box h6 {
-  display: inline;
+
+.services h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  font-size: 30px;
   font-weight: 500;
-  font-size: 24px;
+  color: #80B422;
+}
+.services pre {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  color: #BEBEC4;
+}
+.services h4 {
+  font-weight: 500;
+  color: #333333;
+  margin: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.services .row .row-cols-3 {
+  padding: 15px;
+}
+.services .col {
+  padding: 30px;
+}
+.services i {
+  font-size: xx-large;
+  color: white;
+  background-color: #80B422;
+  margin: 5px;
+  padding: 15px;
+  border-radius: 100px;
+}
+
+.portfolio {
+  background-color: #2C2C2C;
+  padding: 15px;
+}
+.portfolio h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #80B422;
+}
+.portfolio pre {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  color: #BEBEC4;
+}
+.portfolio .nav {
+  justify-content: center;
+}
+.portfolio .nav ul {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  list-style: none;
+}
+.portfolio .nav ul li {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid #80B422;
+  color: #80B422;
+  cursor: pointer;
+}
+.portfolio .nav ul li:hover {
+  background-color: #80B422;
+  color: white;
+}
+.portfolio img {
+  margin: 15px;
+  cursor: pointer;
+}
+
+.team h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #80B422;
+}
+.team pre {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  color: #BEBEC4;
+}
+.team img {
+  height: 200px;
+  width: 200px;
+  border: 2px solid #80B422;
+  border-radius: 100px;
+}
+.team h4 {
+  color: #BEBEC4;
   margin: 10px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+}
+.team h6 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #333333;
+}
+.team i {
+  border: 1px solid #BEBEC4;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: larger;
+  color: #80B422;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.contact {
+  padding: 100px;
+}
+.contact h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #80B422;
+}
+.contact pre {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  color: #BEBEC4;
+  padding: 10px;
+}
+.contact .col {
+  margin: 10px;
+  padding: 10px;
+}
+.contact h6 {
+  padding-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  font-style: normal;
+  color: #333333;
+}
+.contact p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+.contact form label {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  size: 14px;
+  color: #333333;
+}
+.contact form input {
+  padding: 5px;
+  display: block;
+  border: 1px solid #BEBEC4;
+  border-radius: 5px;
+}
+.contact form label {
+  display: block;
+  padding-top: 10px;
+  font-weight: 700;
+  size: 14px;
+  color: #333333;
+}
+.contact button {
+  font-size: 18px;
+  font-weight: 200;
+  color: white;
+  background-color: #80B422;
+  padding: 10px;
+  border: 1px solid #80B422;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.others {
+  background-color: #2C2C2C;
+  padding: 10px;
+  color: #BEBEC4;
+}
+.others .col {
+  padding: 20px;
+}
+.others h6 {
+  color: #80B422;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  font-style: normal;
+}
+.others p {
+  color: #BEBEC4;
+  font-size: 15px;
+  font-weight: 400;
+}
+.others span {
+  color: #80B422;
+  cursor: pointer;
+}
+.others i {
+  font-size: x-small;
+  color: black;
+  background-color: #80B422;
+  padding: 5px;
+  font-weight: bold;
+  margin: 3px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+footer {
+  color: #BEBEC4;
+  display: flex;
+  background-color: #131313;
+  padding: 10px;
+  justify-content: space-around;
+  color: #BEBEC4;
+}
+footer a {
+  color: #80B422;
+  text-decoration: none;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
