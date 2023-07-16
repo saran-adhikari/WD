@@ -14,11 +14,12 @@ html {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-.navbar{
+
+.navbar {
     position: sticky;
     top: 0;
     z-index: 100;
-    
+
 }
 
 .navbar-brand {
@@ -53,39 +54,34 @@ html {
 .navbar-expand-lg .navbar-nav .nav-link {
     margin: 10px;
     padding: 5px;
-    
+
 
     &:hover {
         background-color: $primary;
         color: white;
         border-radius: 10px;
     }
-    
+
 }
 
-.carousel-caption .d-none .d-md-block{
-    h5 {
+
+    header {
         border: 1px solid $primary;
-        background-color: rgba(142, 187, 79, 0.9);
+        background-color: $primary;
         display: inline-block;
-        margin-bottom: 20%;
-        padding: 15px;
         font-size: 45px;
         font-weight: 700;
-    
     }
-    
-    p {
+
+    .para{
         color: $third;
         font-size: 30px;
         font-weight: 700;
         text-align: center;
-        position: absolute;
-        bottom: 180px;
-        left: 412px;
-    
+        
+        
     }
-}
+
 
 
 .start {
@@ -96,23 +92,23 @@ html {
     background-color: $primary;
 
     h4 {
-        font-family:Arial, Helvetica, sans-serif ;
+        font-family: Arial, Helvetica, sans-serif;
         padding: 5px;
         margin-left: 250px;
-        color:#333333;
+        color: #333333;
         font-weight: 500;
         font-size: 20px;
     }
 
     button {
-        font-family:Arial, Helvetica, sans-serif ;
+        font-family: Arial, Helvetica, sans-serif;
         border: 1px solid $primary;
         margin-right: 400px;
         padding: 5px;
         border-radius: 5px;
         font-size: 14px;
         font-weight: 200 bold;
-        
+
 
         &:hover {
             color: white;
@@ -123,73 +119,86 @@ html {
     }
 
 }
-.about{
+
+.about {
     background-color: $secondary;
     color: white;
     padding: 15px;
-    .col{
+
+    .col {
         padding: 25px;
         margin: 10px;
         text-align: left;
     }
-    h3{
-        font-family:Arial, Helvetica, sans-serif ;
-        text-align: center;
-        padding-top: 60px;
-        padding-bottom: 10px;
-        font-size: 30px;
-        font-weight: 500;
-    }
-    pre{
-        text-align: center;
-        font-size: 17px ;
-        font-weight: 400;
-        color: $text;
-    }
-    h4{
-        margin-left: 15px;
-        display: inline-block;
+
+    h3 {
         font-family: Arial, Helvetica, sans-serif;
-    }
-    p{
-        color: $text;
-        text-align: left;
-    }
-    i{
-        color: $primary;
-        font-size: larger;
-    }
-}
-.services{
-    h3{
-        font-family:Arial, Helvetica, sans-serif ;
         text-align: center;
         padding-top: 60px;
         padding-bottom: 10px;
         font-size: 30px;
         font-weight: 500;
-        color: $primary;
     }
-    pre{
+
+    pre {
         text-align: center;
         font-size: 17px;
         font-weight: 400;
         color: $text;
     }
-    h4{
+
+    h4 {
+        margin-left: 15px;
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+        color: $text;
+        text-align: left;
+    }
+
+    i {
+        color: $primary;
+        font-size: larger;
+    }
+}
+
+.services {
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 10px;
+        font-size: 30px;
+        font-weight: 500;
+        color: $primary;
+    }
+
+    pre {
+        text-align: center;
+        font-size: 17px;
+        font-weight: 400;
+        color: $text;
+    }
+
+    h4 {
         font-weight: 500;
         color: #333333;
         margin: 15px;
         font-family: Arial, Helvetica, sans-serif;
     }
-    .row .row-cols-3{
+
+    .row .row-cols-3 {
         padding: 15px;
     }
-    .col{
+
+    .col {
         padding: 30px;
     }
-    i{
-        font-size:xx-large;
+
+    i {
+        font-size: xx-large;
         color: white;
         background-color: $primary;
         margin: 5px;
@@ -199,11 +208,12 @@ html {
     }
 }
 
-.portfolio{
+.portfolio {
     background-color: $secondary;
     padding: 15px;
-    h3{
-        font-family:Arial, Helvetica, sans-serif ;
+
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         padding-top: 60px;
         padding-bottom: 10px;
@@ -211,20 +221,24 @@ html {
         font-weight: 500;
         color: $primary;
     }
-    pre{
+
+    pre {
         text-align: center;
         font-size: 17px;
         font-weight: 400;
         color: $text;
     }
-    .nav{
+
+    .nav {
         justify-content: center;
-        ul{
+
+        ul {
             display: flex;
             align-content: center;
             text-align: center;
             list-style: none;
-            li{
+
+            li {
                 font-weight: 400;
                 font-size: 14px;
                 text-align: center;
@@ -234,22 +248,41 @@ html {
                 border: 2px solid $primary;
                 color: $primary;
                 cursor: pointer;
-                &:hover{
+
+                &:hover {
                     background-color: $primary;
                     color: white;
                 }
             }
         }
     }
-    img{
+    
+    img {
         margin: 15px;
         cursor: pointer;
-    }  
+        border: 1px solid black;
+        margin: 10px;
+        align-items: center;
+        text-align: justify;
+        padding: 10px;
+        border-radius: 15px;
+        background: linear-gradient(to top, $primary 50%, white 50%);
+        background-size: 100% 200%;
+        transition: all .8s;
+
+        &:hover {
+            background-position: left bottom;
+            color: white;
+            border: none;
+            box-shadow: 0 0 20px $primary;
+        }
+
+    }
 }
 
-.team{
-    h3{
-        font-family:Arial, Helvetica, sans-serif ;
+.team {
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         padding-top: 60px;
         padding-bottom: 10px;
@@ -257,31 +290,36 @@ html {
         font-weight: 500;
         color: $primary;
     }
-    pre{
+
+    pre {
         text-align: center;
         font-size: 17px;
         font-weight: 400;
         color: $text;
     }
-    img{
+
+    img {
         height: 200px;
         width: 200px;
         border: 2px solid $primary;
         border-radius: 100px;
     }
-    h4{
+
+    h4 {
         color: $text;
         margin: 10px;
         font-weight: 500;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 22px;
     }
-    h6{
+
+    h6 {
         font-weight: 400;
         font-size: 14px;
         color: #333333;
     }
-    i{
+
+    i {
         border: 1px solid $text;
         border-radius: 5px;
         padding: 8px;
@@ -291,10 +329,12 @@ html {
         cursor: pointer;
     }
 }
-.contact{
+
+.contact {
     padding: 100px;
-    h3{
-        font-family:Arial, Helvetica, sans-serif ;
+
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         padding-top: 60px;
         padding-bottom: 10px;
@@ -302,18 +342,21 @@ html {
         font-weight: 500;
         color: $primary;
     }
-    pre{
+
+    pre {
         text-align: center;
         font-size: 17px;
         font-weight: 400;
         color: $text;
         padding: 10px;
     }
-    .col{
+
+    .col {
         margin: 10px;
         padding: 10px;
     }
-    h6{
+
+    h6 {
         padding-top: 10px;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 500;
@@ -321,36 +364,41 @@ html {
         font-style: normal;
         color: #333333;
     }
-    p{
+
+    p {
         font-size: 14px;
         font-weight: 400;
         color: #333333;
     }
-    form{
-        label{
+
+    form {
+        label {
             display: block;
-            padding-top: 10px ;
+            padding-top: 10px;
             padding-bottom: 10px;
             font-weight: 700;
             size: 14px;
             color: #333333;
         }
-        input{
+
+        input {
             padding: 5px;
-            display: block; 
-            border: 1px solid $text;
-            border-radius: 5px;  
-        }
-        label{
             display: block;
-            padding-top: 10px ;
+            border: 1px solid $text;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            padding-top: 10px;
             font-weight: 700;
             size: 14px;
             color: #333333;
         }
-        
+
     }
-    button{
+
+    button {
         font-size: 18px;
         font-weight: 200;
         color: white;
@@ -361,31 +409,37 @@ html {
         border-radius: 5px;
     }
 }
-.others{
-    background-color:$secondary;
+
+.others {
+    background-color: $secondary;
     padding: 10px;
     color: $text;
-    .col{
+
+    .col {
         padding: 20px;
 
     }
-    h6{
+
+    h6 {
         color: $primary;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 500;
         font-size: 18px;
         font-style: normal;
     }
-    p{
+
+    p {
         color: $text;
         font-size: 15px;
         font-weight: 400;
     }
-    span{
+
+    span {
         color: $primary;
         cursor: pointer;
     }
-    i{
+
+    i {
         font-size: x-small;
         color: black;
         background-color: $primary;
@@ -395,16 +449,18 @@ html {
         border-radius: 2px;
         cursor: pointer;
     }
-    
+
 }
-footer{
+
+footer {
     color: $text;
     display: flex;
-    background-color:#131313 ;
+    background-color: #131313;
     padding: 10px;
     justify-content: space-around;
     color: $text;
-    a{
+
+    a {
         color: $primary;
         text-decoration: none;
         cursor: pointer;

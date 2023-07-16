@@ -49,23 +49,19 @@ html {
   border-radius: 10px;
 }
 
-.carousel-caption .d-none .d-md-block h5 {
+header {
   border: 1px solid #80B422;
-  background-color: rgba(142, 187, 79, 0.9);
+  background-color: #80B422;
   display: inline-block;
-  margin-bottom: 20%;
-  padding: 15px;
   font-size: 45px;
   font-weight: 700;
 }
-.carousel-caption .d-none .d-md-block p {
+
+.para {
   color: #173C34;
   font-size: 30px;
   font-weight: 700;
   text-align: center;
-  position: absolute;
-  bottom: 180px;
-  left: 412px;
 }
 
 .start {
@@ -218,6 +214,21 @@ html {
 .portfolio img {
   margin: 15px;
   cursor: pointer;
+  border: 1px solid black;
+  margin: 10px;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 15px;
+  background: linear-gradient(to top, #80B422 50%, white 50%);
+  background-size: 100% 200%;
+  transition: all 0.8s;
+}
+.portfolio img:hover {
+  background-position: left bottom;
+  color: white;
+  border: none;
+  box-shadow: 0 0 20px #80B422;
 }
 
 .team h3 {
