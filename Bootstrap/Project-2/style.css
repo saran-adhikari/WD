@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition-delay: 2s;
+}
+
+.top {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  background-color: #F2C06C;
+  font-weight: 700;
+  font-size: 15px;
+  color: #663d1d;
+}
+.top span {
+  margin-left: 5px;
+  cursor: pointer;
+}
+.top:hover span {
+  color: #FF3630;
+}
+
+.sec {
+  margin-top: 50px;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  background-color: #2A2A2A;
+  font-size: 15px;
+  color: white;
+  font-weight: 400;
+}
+.sec span {
+  margin: 0 3px 0 3px;
+  color: #F2C06C;
+}
+.sec #click {
+  color: whitesmoke;
+}
+.sec #click:hover {
+  cursor: pointer;
+}
+
+.navbar {
+  padding: 10px;
+  margin: 0 10% 0 10%;
+  background-color: #E6E6E6;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar span span {
+  font-weight: bold;
+}
+.navbar span i {
+  margin-right: 5px;
+  color: #FF3630;
+}
+
+.second {
+  background-color: white;
+}
+.second .navbar {
+  background-color: white;
+}/*# sourceMappingURL=style.css.map */
