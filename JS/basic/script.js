@@ -74,3 +74,14 @@
 // else {
 //     document.write("You did not have any commison")
 // }
+
+// Multiplication Table using for loop
+
+// var num=prompt("Enter your number: ")
+// document.writeln("Your multiplication table is: " + "<br>")
+
+// for(i=1;i<=10;i++){
+//     var table=parseInt(num)*i;
+//     document.writeln(num + "*" + i + "="+ table + "<br>")
+// }
+

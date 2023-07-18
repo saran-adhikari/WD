@@ -8,6 +8,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  overflow: hidden;
 }
 
 .navbar {
@@ -64,31 +65,28 @@ header {
   text-align: center;
 }
 
-.start {
+.container-primary {
   display: flex;
-  align-content: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 15px;
   background-color: #80B422;
 }
-.start h4 {
+.container-primary span {
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px;
-  margin-left: 250px;
   color: #333333;
   font-weight: 500;
   font-size: 20px;
 }
-.start button {
+.container-primary button {
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid #80B422;
-  margin-right: 400px;
   padding: 5px;
   border-radius: 5px;
   font-size: 14px;
   font-weight: 200 bold;
 }
-.start button:hover {
+.container-primary button:hover {
   color: white;
   background-color: #6EAB00;
   transition-delay: 0.2s;
