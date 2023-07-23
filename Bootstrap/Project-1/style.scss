@@ -13,7 +13,7 @@ html {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .navbar {
@@ -64,6 +64,9 @@ html {
     }
 
 }
+.nav-link .active{
+    background-color: $primary;
+}
 
 
     header {
@@ -98,10 +101,12 @@ html {
         font-weight: 500;
         font-size: 20px;
     }
-    button {
+    .btn {
+        background-color: whitesmoke;
+        color: black;
         font-family: Arial, Helvetica, sans-serif;
         border: 1px solid $primary;
-        padding: 5px;
+        padding: 3px;
         border-radius: 5px;
         font-size: 14px;
         font-weight: 200 bold;
