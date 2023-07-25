@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    .row {
+        margin: 5px;
+        padding: 5px;
+
+
+    }
+
+    button {
+        font-weight: bold;
+        text-align: center;
+        width: 40px;
+        padding: 10px;
+        font-size: larger;
+        cursor: pointer;
+        box-shadow: grey;
+    }
+
+    input {
+        text-align: right;
+        margin: 5px;
+        padding: 10px;
+        width: 160px;
+        font-size: larger;
+
+    }
+
+    .container {
+        display: inline-block;
+        background-color: black;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <input type="text" id="text">
+        <div class="row">
+            <button onclick="document.querySelector('#text').value +='7'">7</button>
+            <button onclick="document.querySelector('#text').value +='8'">8</button>
+            <button onclick="document.querySelector('#text').value +='9'">9</button>
+            <button onclick="document.querySelector('#text').value +='/'">&divide;</button>
+        </div>
+        <div class="row">
+            <button onclick="document.querySelector('#text').value +='4'">4</button>
+            <button onclick="document.querySelector('#text').value +='5'">5</button>
+            <button onclick="document.querySelector('#text').value +='6'">6</button>
+            <button onclick="document.querySelector('#text').value +='*'">x</button>
+        </div>
+        <div class="row">
+            <button onclick="document.querySelector('#text').value +='1'">1</button>
+            <button onclick="document.querySelector('#text').value +='2'">2</button>
+            <button onclick="document.querySelector('#text').value +='3'">3</button>
+            <button onclick="document.querySelector('#text').value +='-'">-</button>
+        </div>
+        <div class="row">
+            <button onclick="document.querySelector('#text').value =''">C</button>
+            <button onclick="document.querySelector('#text').value +='0'">0</button>
+            <button onclick=calculate() style="background-color: orange">=</button>
+            <button onclick="document.querySelector('#text').value +='+'">+</button>
+        </div>
+    </div>
+    <script>
+        function calculate() {
+            var get_data = document.querySelector('#text').value;
+            document.querySelector('#text').value = eval(get_data);
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>

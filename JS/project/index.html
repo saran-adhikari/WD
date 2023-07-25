@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saran Adhikari</title>
+    <script src="script.js"></script>
+</head>
+<style>
+    button {
+        margin: 2px;
+        padding: 3px;
+    }
+
+    .heading {
+        margin: 2px;
+        padding: 5px;
+    }
+
+    .second {
+        margin: 2px;
+        padding: 5px;
+    }
+
+    .show-hide {
+        display: none;
+    }
+
+    .text {
+        color: red;
+        background-color: yellow;
+        font-size: 35px;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: underline;
+    }
+    .optn{
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+    img {
+        height: 500px;
+        width: 450px;
+    }
+
+    .light {
+        margin: 5px;
+    }
+
+    .image {
+        margin: 5px;
+
+    }
+
+    
+    
+</style>
+
+<body>
+    <!-- Section -1 -->
+    <button onclick="document.querySelector('#heading').style.color='red'">Color Red</button>
+    <button onclick="document.querySelector('#heading').style.backgroundColor='yellow'">Bg Color Yellow</button>
+    <button onclick="document.querySelector('#heading').classList.remove('show-hide')">Show</button>
+    <button onclick="document.querySelector('#heading').classList.add('show-hide')">Hide</button>
+    <button onclick="document.querySelector('#heading').style.fontWeight='bold'">Bold</button>
+    <button onclick="document.querySelector('#heading').style.fontStyle='italic'">italics</button>
+    <button onclick="document.querySelector('#heading').style.textDecoration='underline'">underline</button>
+    <button onclick="document.querySelector('#heading').style.fontSize='35px'">size 35</button>
+    <button onclick="allChanges()">All</button>
+    <button onclick="document.querySelector('#heading').classList.toggle('show-hide')">Show/hide</button>
+    <button id="change" onclick="change()">Hide</button>
+    <div class="heading" id="heading">BROADWAY INFOSYS</div>
+
+    <hr>
+    <!-- End of section -1  -->
+
+    <!-- Section -2  -->
+    <input id="color" type="color" onchange="color()">
+    <button onclick="color()">Change</button>
+    <input id="bg" type="color" onchange="bgcolor()">
+    <button onclick="bgcolor()">BG Change</button>
+    <select id="font" name="size" onchange="font()">
+        <option value="1px">1</option>
+        <option value="2px">2</option>
+        <option value="3px">3</option>
+        <option value="4px">4</option>
+        <option value="5px">5</option>
+        <option value="6px">6</option>
+        <option value="7px">7</option>
+        <option value="8px">8</option>
+        <option value="9px">9</option>
+        <option value="10px">10</option>
+        <option value="11px">11</option>
+        <option value="12px">12</option>
+        <option value="13px">13</option>
+        <option value="14px">14</option>
+        <option value="15px">15</option>
+        <option value="16px">16</option>
+        <option value="17px">17</option>
+        <option value="18px">18</option>
+        <option value="19px">19</option>
+        <option value="20px">20</option>
+    </select>
+    <select id="option" name="select" onchange="options()">
+        <option value="">All</option>
+        <option value='bold'>Bold</option>
+        <option value='italic' >Italic</option>
+        <option value='underline'>Underline</option>
+    </select>
+
+    <div class="second" id="second">BROADWAY INFOSYS</div>
+    <hr>
+
+    <!-- End of Section-2 -->
+
+    <!-- Section-3 -->
+    <button id="light" onclick="changeLight()">ON</button>
+    <div class="image">
+        <img id="one" src="https://prabhatmallik.com.np/dom/image/OFF.jpg">
+    </div>
+
+
+</body>
+
+</html>
