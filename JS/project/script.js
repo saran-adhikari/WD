@@ -31,27 +31,27 @@ function font() {
     var size = document.querySelector('#font').value;
     document.querySelector('#second').style.fontSize = size
 }
-function multiple(){
+function multiple() {
     var opt = document.querySelector('#option1').value
     console.log(opt)
-    if(opt=='all'){
+    if (opt == 'all') {
         document.querySelector('#second').classList.add('optn')
 
     }
-    else if( opt=='bold'){
-        document.querySelector('#second').style.fontWeight=opt
+    else if (opt == 'bold') {
+        document.querySelector('#second').style.fontWeight = opt
     }
-    else if(opt=='italic'){
-        document.querySelector('#second').style.fontStyle=opt
+    else if (opt == 'italic') {
+        document.querySelector('#second').style.fontStyle = opt
     }
-    else if(opt=='underline'){
-        document.querySelector('#second').style.textDecoration=opt
+    else if (opt == 'underline') {
+        document.querySelector('#second').style.textDecoration = opt
     }
-    
+
 }
 function changeLight() {
     var name = document.querySelector('#light').innerText;
-    
+
     if (name == 'ON') {
         document.querySelector('#light').innerText = 'OFF'
         document.querySelector('#one').src = 'https://prabhatmallik.com.np/dom/image/ON.jpg'
@@ -63,4 +63,13 @@ function changeLight() {
 
     }
     document.querySelector('#light').value
+}
+function toggle() {
+    let pw = document.querySelector('#pass');
+    if (pw.type === "password") {
+        pw.type = "text";
+    }
+    else {
+        pw.type = "password";
+    }
 }
