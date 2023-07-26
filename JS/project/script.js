@@ -73,3 +73,13 @@ function toggle() {
         pw.type = "password";
     }
 }
+
+
+
+
+
+
+function calculate() {
+    var get_data = document.querySelector('#text').value;
+    document.querySelector('#text').value = eval(get_data);
+}
