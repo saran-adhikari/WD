@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saran Adhikari</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
     button {
@@ -36,7 +39,8 @@
         font-style: italic;
         text-decoration: underline;
     }
-    .optn{
+
+    .optn {
         font-weight: bold;
         font-style: italic;
         text-decoration: underline;
@@ -55,9 +59,35 @@
         margin: 5px;
 
     }
-    #check{
+
+    #check {
         cursor: pointer;
     }
+    .container{
+        cursor: pointer;
+        margin: 10px;
+        
+    }
+    .bar1{
+        width: 20px;
+        height: 2px;
+        background-color: black;
+        margin: 4px;
+    }
+    .bar2{
+        width: 20px;
+        height: 2px;
+        background-color: black;
+        margin: 4px;
+    }
+    .bar3{
+        width: 20px;
+        height: 2px;
+        background-color: black;
+        margin: 4px;
+    }
+    
+
     .row {
         margin: 5px;
         padding: 5px;
@@ -86,9 +116,6 @@
         display: inline-block;
         background-color: black;
     }
-
-    
-    
 </style>
 
 <body>
@@ -166,13 +193,13 @@
         <option value="49px">49</option>
         <option value="50px">50</option>
     </select>
-    
+
     <select id="option1" onchange="multiple()">
         <option value='all'>All</option>
         <option value='bold'>Bold</option>
-        <option value='italic' >Italic</option>
+        <option value='italic'>Italic</option>
         <option value='underline'>Underline</option>
-        
+
     </select>
     <button onclick="multiple()">Change</button>
 
@@ -204,6 +231,12 @@
     <!-- End of Section-3 -->
 
     <!-- Section-4 -->
+    <!-- <div class="container" id="bars" onclick="bars()"> -->
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    <!-- </div> -->
+    <hr>
 
     <!-- End of section-4 -->
 
@@ -216,13 +249,13 @@
         <input type="text" id="text">
         <div class="row">
             <button class="calc" onclick="document.querySelector('#text').value +='7'">7</button>
-            <button class="calc"  onclick="document.querySelector('#text').value +='8'">8</button>
-            <button class="calc"  onclick="document.querySelector('#text').value +='9'">9</button>
+            <button class="calc" onclick="document.querySelector('#text').value +='8'">8</button>
+            <button class="calc" onclick="document.querySelector('#text').value +='9'">9</button>
             <button class="calc" onclick="document.querySelector('#text').value +='/'">&divide;</button>
         </div>
         <div class="row">
-            <button class="calc"  onclick="document.querySelector('#text').value +='4'">4</button>
-            <button class="calc"  onclick="document.querySelector('#text').value +='5'">5</button>
+            <button class="calc" onclick="document.querySelector('#text').value +='4'">4</button>
+            <button class="calc" onclick="document.querySelector('#text').value +='5'">5</button>
             <button class="calc" onclick="document.querySelector('#text').value +='6'">6</button>
             <button class="calc" onclick="document.querySelector('#text').value +='*'">x</button>
         </div>
@@ -236,7 +269,7 @@
             <button class="calc" onclick="document.querySelector('#text').value =''">C</button>
             <button class="calc" onclick="document.querySelector('#text').value +='0'">0</button>
             <button class="calc" onclick=calculate() style="background-color: orange">=</button>
-            <button class="calc"  onclick="document.querySelector('#text').value +='+'">+</button>
+            <button class="calc" onclick="document.querySelector('#text').value +='+'">+</button>
         </div>
     </div>
     <!-- End of Section-6 -->
