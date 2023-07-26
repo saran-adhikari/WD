@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+<style>
+    .heading{
+        display: none;
+    }
+    .second{
+        display: none;
+    }
+</style>
 <body>
+    <button onclick="color()">Change color by JS</button>
+    <button onclick="hide()">Hide using JS</button>
+    <div id="heading">Saran Adhikari JS</div>
     
+    <button id="bgcolor">Change bg color by jQuery</button>
+    <button id="hidden">Hide by jQuery</button>
+    <div id="second">Saran Adhikari jQuery</div>
 </body>
+<script>
+function color(){
+    var color=document.querySelector('#heading').innerText;
+    document.querySelector('#heading').style.color='red'
+}
+function hide(){
+    var hide=document.querySelector('#heading').value;
+    document.querySelector('#heading').classList.toggle('heading')
+}
+</script>
+<!-- jQuery -->
+<script>
+    $('#bgcolor').click(function(){
+        $('#second').css('background-color','red')
+    });
+    $('#hidden').click(function(){
+        $('#second').toggle('second')
+    })
+</script>
 </html>
