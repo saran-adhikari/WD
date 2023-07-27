@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<style>
+    .btn {
+        margin: 10px 0;
+    }
+
+    .box {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        /* position: absolute; */
+    }
+
+    .box2 {
+        margin: 10px 0;
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+    }
+</style>
+
+<body>
+    <div class="btn">
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <button id="toggle">Toggle</button>
+
+        <button id="fadein">fade in</button>
+        <button id="fadeout">fade out</button>
+        <button id="fadetoggle">fade toggle</button>
+
+        <button id="slideup"> slide up</button>
+        <button id="slidedown"> slide down</button>
+        <button id="slidetoggle"> slide toggle</button>
+
+        <button id="animate"> animate</button>
+        <button id="stop"> Stop</button>
+    </div>
+    <div class="box"></div>
+
+    <hr>
+    <label for="width">Width</label>
+    <input id="width" type="number">
+
+    <label for="height">Height</label>
+    <input id="height" type="number">
+    <button id="set">Set</button>
+    <div class="box2"></div>
+
+    <script>
+        $('#set').click(function () {
+            $('.box2').animate({
+                width: $('#width').val() + 'px',
+                height: $('#height').val() + 'px',
+
+            })
+        })
+    </script>
+</body>
+<script>
+    $('#hide').click(function () {
+        $('.box').hide(2000)
+    });
+    $('#show').click(function () {
+        $('.box').show()
+    });
+    $('#toggle').click(function () {
+        $('.box').toggle()
+    });
+
+    $('#fadein').click(function () {
+        $('.box').fadeIn()
+    });
+    $('#fadeout').click(function () {
+        $('.box').fadeOut()
+    });
+    $('#fadetoggle').click(function () {
+        $('.box').fadeToggle(2000)
+    });
+
+    $('#slideup').click(function () {
+        $('.box').slideUp(2000)
+    });
+    $('#slidedown').click(function () {
+        $('.box').slideDown(2000)
+    });
+    $('#slidetoggle').click(function () {
+        $('.box').slideToggle(2000)
+    });
+
+    $('#animate').click(function () {
+        $('.box').animate({
+            width: '600px',
+            height: '300px',
+            opacity: '0.7',
+        }, 3000)
+    });
+
+    $('#stop').click(function () {
+        $('.box').stop();
+    });
+
+    $('.box').mouseover(function () {
+        $('.box').css('background-color', 'green');
+    });
+    $('.box').mouseleave(function () {
+        $('.box').css('background-color', 'black');
+    });
+    $('.box').click(function () {
+        $('.box').css('background-color', 'yellow');
+    });
+
+    $('.box').mouseover(function () {
+        $('.box').animate({
+            width: '600px',
+            height: '300px',
+            opacity: '0.7',
+        }, 3000)
+    });
+
+</script>
+
+</html>
